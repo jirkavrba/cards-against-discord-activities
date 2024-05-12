@@ -2,5 +2,10 @@ spring:
   application:
     name: cards-against-humanity-discord
 
+  data:
+    redis:
+      url: ${REDIS_URL:redis://localhost:6379}
+
 server:
   port: ${PORT:8080}
+
